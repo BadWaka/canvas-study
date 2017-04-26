@@ -4,10 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <style>
+        #canvas {
+            border: 1px solid #dbdbdb;
+            margin: 0 auto
+        }
+    </style>
 </head>
 
 <body>
-    <canvas id="canvas" width="1024" height="768" style="border:1px solid #dbdbdb;"></canvas>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+        }
+    </script>
 </body>
 
 </html>
