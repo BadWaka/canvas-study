@@ -11,6 +11,7 @@
         var canvas = document.getElementById('canvas');
         var ctx = canvas.getContext('2d');
 
+        // 空心
         ctx.lineWidth = 5;
         ctx.strokeStyle = "red";
         for (var i = 0; i < 10; i++) {
@@ -18,6 +19,57 @@
             ctx.arc(50 + i * 100, 50, 30, 0, 2 * Math.PI * (i + 1) / 10);
             ctx.closePath();
             ctx.stroke();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 150, 30, 0, 2 * Math.PI * (i + 1) / 10);
+            // ctx.closePath();
+            ctx.stroke();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 250, 30, 0, 2 * Math.PI * (i + 1) / 10, true);
+            ctx.closePath();
+            ctx.stroke();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 350, 30, 0, 2 * Math.PI * (i + 1) / 10, true);
+            // ctx.closePath();
+            ctx.stroke();
+        }
+
+        // 填充
+        ctx.fillStyle = 'red';
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 450, 30, 0, 2 * Math.PI * (i + 1) / 10);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 550, 30, 0, 2 * Math.PI * (i + 1) / 10);
+            // ctx.closePath();
+            ctx.fill();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 650, 30, 0, 2 * Math.PI * (i + 1) / 10, true);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 750, 30, 0, 2 * Math.PI * (i + 1) / 10, true);
+            // ctx.closePath();
+            ctx.fill();
         }
     }
 </script>

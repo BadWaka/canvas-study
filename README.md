@@ -2,7 +2,7 @@
 
 # 学习canvas
 
-## canvas 绘制七巧板
+## 2-2 canvas 绘制七巧板
 
 > GitHub: https://github.com/BadWaka/canvas-study/blob/master/public/2-2/tangram.html
 
@@ -63,3 +63,8 @@
 </body>
 </html>
 ```
+
+## 2-3 绘制弧
+
+
+![](http://upload-images.jianshu.io/upload_images/1828354-5b0f5cffc8b0a2df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
