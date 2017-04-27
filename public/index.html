@@ -19,17 +19,28 @@
         var canvas = document.getElementById('canvas');
         var context = canvas.getContext('2d');
 
+        context.beginPath();
         context.moveTo(100, 100);
         context.lineTo(400, 400);
         context.lineTo(400, 100);
         context.lineTo(100, 100);
+        context.closePath();
 
         context.lineWidth = 5;
         context.strokeStyle = 'green';
         context.stroke();
 
-        context.fillStyle = 'red';
-        context.fill();
+        // 画多边形
+        // context.fillStyle = 'red';
+        // context.fill();
+
+        context.beginPath();
+        context.moveTo(200, 100);
+        context.lineTo(400, 400);
+        context.closePath();
+
+        context.strokeStyle = '#000';
+        context.stroke();
 
     }
 </script>
