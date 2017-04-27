@@ -13,13 +13,26 @@
 </head>
 
 <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
-    <script>
-        window.onload = function () {
-            var canvas = document.getElementById('canvas');
-            var context = canvas.getContext('2d');
-        }
-    </script>
+<canvas id="canvas" width="500" height="500"></canvas>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+
+        context.moveTo(100, 100);
+        context.lineTo(400, 400);
+        context.lineTo(400, 100);
+        context.lineTo(100, 100);
+
+        context.lineWidth = 5;
+        context.strokeStyle = 'green';
+        context.stroke();
+
+        context.fillStyle = 'red';
+        context.fill();
+
+    }
+</script>
 </body>
 
 </html>
