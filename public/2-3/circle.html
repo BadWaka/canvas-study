@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>circle</title>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="1000"></canvas>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "red";
+        for (var i = 0; i < 10; i++) {
+            ctx.beginPath();
+            ctx.arc(50 + i * 100, 50, 30, 0, 2 * Math.PI * (i + 1) / 10);
+            ctx.closePath();
+            ctx.stroke();
+        }
+    }
+</script>
+</body>
+</html>
