@@ -41,8 +41,14 @@
         }
         ctx.closePath();    // closePath并不是用来表示结束 而是功能性的 做图形闭合处理（从最后的状态点自动lineTo回归起始点封口）
 
+        // 填充图形
         ctx.fillStyle = color;
         ctx.fill();
+
+        // 加边框
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#000';
+        ctx.stroke();
     }
 </script>
 </body>
